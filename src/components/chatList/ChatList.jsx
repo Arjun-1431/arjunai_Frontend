@@ -6,7 +6,7 @@ const ChatList = () => {
   const { isPending, error, data } = useQuery({
     queryKey: ["userChats"],
     queryFn: () =>
-      fetch(`arjunai-backend.vercel.app`, {
+      fetch(`https://arjunai-backend.vercel.app`, {
         credentials: "include",
       }).then((res) => res.json()),
   });

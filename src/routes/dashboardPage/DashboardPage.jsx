@@ -12,7 +12,7 @@ const DashboardPage = () => {
 
   const mutation = useMutation({
     mutationFn: (text) => {
-      return fetch(`arjunai-backend.vercel.app`, {
+      return fetch(`https://arjunai-backend.vercel.app`, {
         method: "POST",
         credentials: "include",
         headers: {

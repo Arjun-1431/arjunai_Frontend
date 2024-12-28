@@ -7,7 +7,7 @@ const publicKey = "public_Fjo4WPu3lmGYB5Pe7eSHXdgXXyU=";
 const authenticator = async () => {
   try {
     // Make sure to use POST method here for the request
-    const response = await fetch("arjunai-backend.vercel.app", {
+    const response = await fetch("https://arjunai-backend.vercel.app", {
       method: "POST",  // Use POST method
       headers: {
         "Content-Type": "application/json",  // Ensure proper content type
