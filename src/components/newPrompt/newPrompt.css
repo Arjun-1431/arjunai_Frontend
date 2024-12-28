@@ -1,0 +1,47 @@
+.newForm {
+  position: fixed; /* Make the form fixed at the bottom */
+  bottom: 10px; /* Adjust bottom spacing to create space above */
+  width: 80%; /* Adjust width if necessary */
+  max-width: 453px; /* Limit the max width */
+  background-color: #2c2937;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px;
+  margin-top: 1%;
+  left: 60%;
+  transform: translateX(-50%); /* Center the form horizontally */
+
+  /* Ensure input field and button do not overlap */
+  input {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ececec;
+  }
+
+  button, label {
+    border-radius: 50%;
+    background-color: #605e68;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.chatHistory {
+  margin-bottom: 80px; /* Add margin to prevent the chat from getting overlapped by the input form */
+  overflow-y: auto; /* Ensure scrolling for chat history */
+  max-height: calc(100vh - 100px); /* Limit the height of chat container */
+}

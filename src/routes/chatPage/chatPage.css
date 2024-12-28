@@ -1,0 +1,110 @@
+/* General Styles for Code Block */
+.code-block {
+  background-color: #282a36;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.copy-button {
+  background-color: #6272a4;
+  color: #f8f8f2;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.copy-button:hover {
+  background-color: #44475a;
+}
+
+/* Main Chat Page Styles */
+.chatPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%; /* Ensure chatPage takes full width */
+}
+
+/* Wrapper for Chat */
+.wrapper {
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px; /* Add some padding for better aesthetics */
+  box-sizing: border-box;
+}
+
+/* Chat Container */
+.chat {
+  width: 76%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: -4px;
+    padding-bottom: -16px;
+}
+
+/* Styling for Messages */
+.message {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #44475a;
+  color: #ececec;
+  max-width: 80%;
+  word-wrap: break-word; /* Ensure long words break */
+}
+
+.message.user {
+  background-color: #2c2937;
+  align-self: flex-end;
+  border-radius: 20px;
+  margin: 3%;
+}
+
+/* Auto-scroll to last message */
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .chat {
+    width: 80%; /* Wider chat container on smaller screens */
+  }
+
+  .message {
+    max-width: 90%; /* Allow larger message area on smaller screens */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .wrapper {
+    padding: 5px; /* Reduce padding on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .chat {
+    width: 95%; /* Almost full-width on very small screens */
+  }
+
+  .message {
+    max-width: 100%; /* Full width for messages */
+    padding: 10px; /* Smaller padding */
+  }
+
+  .wrapper {
+    padding: 0; /* Remove padding for smaller screens */
+  }
+}
+
